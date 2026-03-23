@@ -65,6 +65,32 @@ var display = function(){
     textSize(50);
     text("Press 'r' to restart \nthe game", 50, 200);
   }
+
+
+var x = 0;
+while (x < 400){
+  text("🌘", x, 340);
+  x += 20;
+} 
+
+x = 0 
+while(x < 400){
+  text("🌧️", x, 200);
+  x += 60;
+}
+
+setup = function(){
+  size(400,400);
+
+  background(255,255,247);
+  stroke(173,222,237);
+
+  //for(start; how long; change)
+  for(var x=0; x < 400; x+=20){
+    
+  }
+}
+
 }
 
 var reset = function(){
