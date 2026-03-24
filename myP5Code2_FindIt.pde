@@ -1,16 +1,17 @@
 var starXPos = [];
 var starYPos = [];
-var star = "⭐️";
+var star = "🐟";
 var starTotal = 100;
 
 var planetXPos = [];
 var planetYPos = [];
-var planet = "🪐";
+var planet = "🐢";
 var planetTotal = 3;
 var planetFound = 0;
 
 setup = function() {
    size(600, 450); 
+   frameRate(5);
 
    reset();
 }
@@ -42,7 +43,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100);
+  background(100,100,100,0);
 
   fill(200,200,0);
   textSize(20);
@@ -65,33 +66,40 @@ var display = function(){
     textSize(50);
     text("Press 'r' to restart \nthe game", 50, 200);
   }
-
+  textSize(20);
 
 var x = 0;
 while (x < 400){
-  text("🌘", x, 340);
-  x += 20;
+  text("🦈", x, 250);
+  x += 100;
 } 
 
 x = 0 
 while(x < 400){
-  text("🌧️", x, 200);
-  x += 60;
+  text("🐬", x, 100);
+  x += 100;
 }
 
-setup = function(){
-  size(400,400);
 
-  background(255,255,247);
+//  background(255,255,247);
   stroke(173,222,237);
 
   //for(start; how long; change)
   for(var x=0; x < 400; x+=20){
     
   }
-}
+   for(var i = 55; i < 350 ; i+=20){
+    text("• 🌊˖°𓇼⋆🐋🐚 𓈒𓏸", random(400),i);
+   }
+};
 
-}
+//array 
+var stuff =["the animals are out of control, find the turtles"]
+
+fill(52, 222, 235);
+text (stuff[0], 50 ,380);
+
+
 
 var reset = function(){
   starXPos = [];
