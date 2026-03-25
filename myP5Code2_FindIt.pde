@@ -91,13 +91,34 @@ while(x < 400){
    for(var i = 55; i < 350 ; i+=20){
     text("• 🌊˖°𓇼⋆🐋🐚 𓈒𓏸", random(400),i);
    }
-};
 
-//array 
+   //array 
 var stuff =["the animals are out of control, find the turtles"]
 
 fill(52, 222, 235);
 text (stuff[0], 50 ,380);
+
+downFish ()
+
+};
+
+
+var move = 1
+var xPosition = [20,100,250];
+var yPosition = [40,150,300];
+var downFish = function(){
+  for (var i = 0; i < yPosition.length; i++){
+    text("🐠", xPosition[i], yPosition[i]);
+    xPosition[i]+= move;
+
+    if(xPosition[i] > 600){
+      move =-1
+    }
+    if(xPosition[i] < -200){
+      move =1
+    }
+  }
+}
 
 
 
